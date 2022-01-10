@@ -1,6 +1,8 @@
 # RoughPages
  Paste and Share Text Quickly
 
+ ![](img/show1.png)
+
 # About
   RoughPages is a Text Sharing WebApp that allows you to input text data and get a shareable link to access that
   text data from anywhere.

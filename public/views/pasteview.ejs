@@ -1,0 +1,50 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <style>
+    #main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+  </style>
+
+  <body class ="bg-slate-700">
+    <div id="main">
+        <h1 class="font-bold text-8xl text-green-400">RoughPages</h1>
+        <div class="flex flex-col items-center mt-12">
+          <div class="">
+            <label class="font-bold text-3xl text-white" for="pastedata">Here is your Text Data</label>
+          </div>
+          <div class="mt-2">
+            <textarea class="rounded-md w-fit h-72" id="rawText" name="rawText" rows="8" cols="60"><%= pasteData.textData %></textarea>
+          </div>
+          <div class="flex flex-row">
+            <button class="mt-12 rounded-md bg-green-400 p-2 text-white text-xl font-bold hover:bg-green-500" type="button" name="button" onclick="copyLink()">COPY LINK</button>
+            <button class="mt-12 ml-6 rounded-md bg-red-400 p-2 text-white text-xl font-bold hover:bg-red-500" type="button" name="button" onclick="goDelete()">DELETE</button>
+            <a class="mt-12 ml-6 rounded-md bg-green-400 p-2 text-white text-xl font-bold hover:bg-green-500" href="/">HOME</a>
+          </div>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    function copyLink(){
+      navigator.clipboard.writeText(window.location.href);
+      alert("Sharable Link Copied to Clipboard!");
+    };
+
+    function goDelete(){
+      const currUrl = window.location.href
+      const pasteId = currUrl.slice(-9)
+      const baseUrl = currUrl.replace(pasteId,"")
+      window.location.replace(`${baseUrl}delete/${pasteId}`);
+    }
+  </script>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <style>
+    #main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+  </style>
+
+  <body class ="bg-slate-700">
+    <div id="main">
+        <h1 class="font-bold text-8xl text-green-400">RoughPages</h1>
+        <form action="/paste" class="mt-12 flex flex-col items-center" method="post">
+          <div class="">
+            <label class="font-bold text-5xl text-red-400" for="pastedata">404</label>
+          </div>
+          <div class="">
+            <label class="font-bold text-xl text-red-400" for="pastedata">"You were supposed to be the chosen one!"</label>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>

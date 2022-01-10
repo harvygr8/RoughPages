@@ -12,7 +12,7 @@
   ```sh
   npm install
   ```
-     - To Run the application
+  - To Run the application
   ```sh
   npm start
 

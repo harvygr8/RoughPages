@@ -1,5 +1,5 @@
 # RoughPages
- Paste and Share Text Quickly
+ Web app made with EJS , MongoDB and tailwindCSS that allows you to paste and share text quickly
 
  ![](img/show1.png)
 

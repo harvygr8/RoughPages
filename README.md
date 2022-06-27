@@ -1,7 +1,7 @@
 # RoughPages
  Web app made with EJS , MongoDB and tailwindCSS that allows you to paste and share text quickly
 
- ![](img/show1.png)
+ ![](img/show2.png)
 
 # About
   RoughPages is a Text Sharing WebApp that allows you to input text data and get a shareable link to access that
